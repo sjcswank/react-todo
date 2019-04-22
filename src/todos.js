@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 
 const Todo = ({todos, toggleComplete, deleteTodo}) => {
 
@@ -22,7 +23,7 @@ const Todo = ({todos, toggleComplete, deleteTodo}) => {
 					<div key={todo.id}>
 						<div 
 						onClick={() => toggleComplete(todo.id)}
-						style={styleCrossedOff}>
+						className="crossedOff todo">
 						{todo.content}
 						</div>
 						<button onClick={() => deleteTodo(todo.id)}>X</button>
@@ -30,7 +31,7 @@ const Todo = ({todos, toggleComplete, deleteTodo}) => {
 			return (<div key={todo.id}>
 						<div 
 						onClick={() => toggleComplete(todo.id)}
-						style={styleTodo}>
+						className="todo">
 						{todo.content}</div>
 						<button onClick={() => deleteTodo(todo.id)}>X</button>
 					</div>)

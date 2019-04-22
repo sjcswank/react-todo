@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css';
 import Todos from './todos';
 import TodoForm from './todoForm';
 
