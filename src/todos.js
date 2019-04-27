@@ -3,19 +3,6 @@ import './App.css';
 
 const Todo = ({todos, toggleComplete, deleteTodo}) => {
 
-	const styleCrossedOff = {
-		position: 'relative',
-		textDecoration: "line-through", 
-		display: "inline-block",
-		padding: "5px"
-	}
-
-	const styleTodo = {
-		position: 'relative', 
-		display: "inline-block",
-		padding: "5px"
-	}
-
 	const todoList = todos.length ? (
 		todos.map(todo => {
 			if(todo.complete)
