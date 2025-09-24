@@ -14,18 +14,18 @@ const Todo = ({todos, toggleComplete, deleteTodo}) => {
 						{todo.content}
 						</div>
 						<button onClick={() => deleteTodo(todo.id)}>X</button>
-					</div>)
+					</div>);
 			return (<div key={todo.id}>
 						<div 
 						onClick={() => toggleComplete(todo.id)}
 						className="todo">
 						{todo.content}</div>
 						<button onClick={() => deleteTodo(todo.id)}>X</button>
-					</div>)
+					</div>);
 		})
 	)
 	:
-	(<p>You have no todos left!</p>)
+	(<p>You have no todos left!</p>);
 
 
 	return (
@@ -33,6 +33,6 @@ const Todo = ({todos, toggleComplete, deleteTodo}) => {
 	    {todoList}
 	  </div>
 	);
-}
+};
 
 export default Todo;
